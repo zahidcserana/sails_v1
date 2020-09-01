@@ -8,13 +8,32 @@
 module.exports = {
 
   attributes: {
-    firstname: {
+    fullname: {
+      type: 'string',
+      required: true,
+      description: 'Full representation of the user\'s name.',
+      maxLength: 120,
+      example: 'Zahid Alislam'
+    },
+    email: {
+      type: 'string',
+      required: true,
+      unique: true,
+      isEmail: true,
+      maxLength: 200,
+      example: 'zahid@example.com'
+    },
+    mobile: {
       type: 'string'
     },
-    lastname: {
-      type: 'string'
-    },
+    password: {
+      type: 'string',
+      required: true,
+      description: 'Securely hashed representation of the user\'s login password.',
+      protect: true,
+      example: '2$28a8eabna301089103-13948134nad'
+    }
   },
-  datastore: 'mysql'
+  datastore: 'mongodb'
 };
 

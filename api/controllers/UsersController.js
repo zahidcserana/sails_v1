@@ -13,6 +13,14 @@ module.exports = {
       }
       response.view('displayAll', {users: users});
     });
+  },
+
+  userAdd: function (request, response) {
+    response.view('userAdd');
+  },
+
+  userStore: function (request, response) {
+    
   }
 };
 

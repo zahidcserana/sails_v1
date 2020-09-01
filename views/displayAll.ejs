@@ -3,16 +3,18 @@
     <tr>
         <th>ID
         </td>
-        <th>First Name</th>
-        <th>Last Name</th>
+        <th>Full Name</th>
+        <th>Email</th>
+        <th>Mobile</th>
     </tr>
     </thead>
     <tbody>
     <% users.forEach(function(user){ %>
         <tr>
             <td> <%= user.id %> </td>
-            <td> <%= user.firstname %> </td>
-            <td> <%= user.lastname %> </td>
+            <td> <%= user.fullname %> </td>
+            <td> <%= user.email %> </td>
+            <td> <%= user.mobile %> </td>
         </tr>
     <% }) %>
     </tbody>
