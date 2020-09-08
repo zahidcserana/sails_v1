@@ -21,9 +21,12 @@ module.exports.routes = {
 
   '/': {view: 'pages/homepage'},
 
+  'GET /customer/create': {action: 'customer/view-create'},
   'GET /users/displayAll': {action: 'users/displayAll'},
-  'GET /users/userAdd': {action: 'users/userAdd'},
+  'GET /users/userAdd': {action: 'entrance/view-signup'},
   'POST /users/userStore': {action: 'user-store'},
+  'GET /product/:ref': 'ProductController.show',
+  '/product/add': {action: 'product/add'},
   /***************************************************************************
    *                                                                          *
    * More custom routes here...                                               *
@@ -34,6 +37,12 @@ module.exports.routes = {
    * not match any of those, it is matched against static assets.             *
    *                                                                          *
    ***************************************************************************/
+  'POST  /api/v1/entrance/signup': {action: 'entrance/signup'},
+  'POST  /api/v1/customer/store': {action: 'customer/store'},
 
-
+  'POST /post': 'post/create',
+  'DELETE /post/:postId': 'post/delete',
+  'GET /post/:postId': 'post/edit',
+  'POST /post/:postId/update': 'post/update',
+  'GET /home': 'post/home',
 };

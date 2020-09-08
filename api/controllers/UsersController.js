@@ -18,9 +18,5 @@ module.exports = {
   userAdd: function (request, response) {
     response.view('userAdd');
   },
-
-  userStore: function (request, response) {
-    
-  }
 };
 

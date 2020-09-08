@@ -13,8 +13,12 @@
     "sails-hook-grunt": "^4.0.0",
     "sails-hook-orm": "^2.1.1",
     "sails-hook-sockets": "^2.0.0",
+    "sails-hook-validation": "^0.4.7",
+    "sails-hook-validation-ev": "0.0.2",
     "sails-mongo": "^1.2.0",
-    "sails-mysql": "1.0.1"
+    "sails-mysql": "1.0.1",
+    "save": "^2.4.0",
+    "shortid": "^2.2.15"
   },
   "devDependencies": {
     "eslint": "5.16.0"

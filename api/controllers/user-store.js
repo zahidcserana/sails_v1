@@ -15,11 +15,6 @@ module.exports = {
   },
 
   fn: async function (inputs, exits) {
-
-    if (!this.req.me) {
-      // throw {redirect: '/'};
-    }
-
     let params = this.req.allParams();
 
     let person = await Users.create(params).fetch();
@@ -27,4 +22,4 @@ module.exports = {
     return exits.success({person: person});
 
   }
-}
+};

@@ -1,0 +1,25 @@
+<html>
+
+<style>
+    .post-container {
+        background-color: white;
+        margin: 16px;
+        padding: 16px;
+        border-radius: 5px;
+        border: solid 1px rgb(199, 199, 199)
+    }
+</style>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<body style='background-color: rgb(235, 235, 235)'>
+This will show a list of our posts
+
+<form class="post-container" action="/post/<%= record.id; %>/update" method="POST">
+    <div>Create Post</div>
+    <input name='title' type="text" placeholder="Post Title" value='<%= record.title; %>'>
+    <input name='postBody' type="text" placeholder="Post Body" value='<%= record.body; %>'>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
